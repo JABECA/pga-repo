@@ -14,6 +14,9 @@ var io = require('socket.io')(app.listen(port));
 var SerialPort = require('serialport');
 
 
+//Tutorial: https://www.youtube.com/watch?v=WnmymruDag4
+//VersionNode: 6.10.2
+
 
 var sp = new SerialPort('/COM4', {
    baudRate: 9600,

@@ -4,6 +4,9 @@ $(document).ready(function(){
 	/*$("#Servicio1").text();
 	$("#Servicio2").text();*/
 
+	//42["datos",{"sistemaPluvial":"Ev1_off","sistemaPotable":"Ev2_on","Potable":"Activado","Lluvia":"Apagado","Servicio1":"Apagado","Servicio2":"Apagado","Pluvial":2081.37,"Flujo1":0}]
+	//42["datos",{"sistemaPluvial":"Ev1_off","sistemaPotable":"Ev2_on","Potable":"Activado","Lluvia":"Apagado","Servicio1":"Apagado","Servicio2":"Apagado","Pluvial":2110.54,"Flujo1":0}]
+
 	var $sisPluvial = $("#sisPluvial");  //de la etiqueta del html
 	var $sisPotable = $("#sisPotable");  //de la etiqueta del html
 	var $serv1 = $("#Servicio1");
