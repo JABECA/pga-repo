@@ -1,0 +1,763 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-size: 100%;
+	background: #C0C0C0;
+	display: block;
+	padding-bottom: 10px;
+}
+
+p{
+	color: #31313f;
+	font-family: arial;
+	font-size: 12px;
+	padding: 10px;
+}
+
+
+
+h1{
+	color: #646472;
+	font-family: verdana;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+}
+h2{
+	color: #646472;
+	font-family: verdana;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px;
+}
+h3{
+	color: #fff;
+	background: #FFA30D;
+	font-family: verdana;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h4{
+	background: #3B3B3B;
+	color: #fff;
+	font-family: verdana;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 0;
+	text-align:center;
+}
+h6{
+	color: #000;
+	font-family: verdana;
+	font-size: 13px;
+	padding: 10px 0 0 0,
+}
+
+
+#contsuperior{											
+	background-color: grey;
+	display: block;
+	padding-bottom: 10px;
+
+}
+header{									
+	margin: auto;
+	width: 70%;
+	height: 110px;
+}
+
+#logotipo{							
+	display: block;
+	float: left;
+	line-height: 110px;
+	width: 230px;
+}
+#logotipo img{
+	max-width: 100%;
+	vertical-align: middle;
+	width: 300px;
+	height: 70px;
+}
+
+#rsociales{
+	display: block;
+	float: right;
+	line-height: 110px;
+	widows: 160px;
+}
+
+#rsociales img{
+	border-radius: 100px;
+	box-shadow: 2px 3px 5px #000;
+	margin-left: 10px;
+	vertical-align: middle;
+	height: 45px;
+	width: 45px;
+
+}
+
+/***************** Menu de navegacion NAV*******************************/
+
+nav {
+	width:70%;
+	max-width:100%;
+	margin:10px auto;
+	margin-top: 10px;
+	background:#024959;
+	z-index: 1000;
+}
+
+.menu_bar {
+	display:none;
+	
+}
+
+nav ul {
+	/*overflow:hidden;*/
+	list-style:none;
+}
+
+nav ul li {
+	/*float:left;*/
+	display: inline-block;
+	position: relative;
+}
+
+nav ul li a {
+	color:#fff;
+	padding:15px;
+	display:block;
+	text-decoration:none;
+	font-size: 25px;
+}
+
+nav ul li span {
+	margin-right: 10px;
+}
+
+nav ul li:hover {
+	background:#037E8C;
+}
+
+nav ul li:hover .children{ /* alpasar el mouse aparece el submenu*/
+	display: block;
+}
+nav ul li .children{   /*al quitar el mouse las ocultamos*/
+	display: none;
+	background: #011826;
+	position: absolute;
+	width: 150%;
+	z-index: 1000;
+}
+nav ul li .children li{   /*al quitar el mouse las ocultamos*/
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255 .5);
+}
+nav ul li .children li a{   /*al quitar el mouse las ocultamos*/
+	display: block;
+	
+}
+nav ul li .children li a span{   /*al quitar el mouse las ocultamos*/
+	float: right;
+	position: relative;
+	top: 3px;
+	margin-right: 0;
+	margin-left: 10px;
+}
+nav ul li .caret{
+	position: relative;
+	top: 3px;
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+
+/*********************El slider de las imagenes *******************************/
+#slider{
+	margin:auto;
+	background: #ccc;
+	padding: 0 0 5px 0;
+	width: 70%;
+}
+/*********************La imagen del volumen de agua************************************/
+
+.liquidFillGaugeText {  		/*texto que muestra el porcentaje de llenado del recp*/
+ 	font-family: Helvetica;
+ 	font-weight: bold;
+}
+
+
+
+/**************************contenedor contenido Intermedio*****************************/
+
+#interior{
+	margin: auto;
+	width: 70%;
+}
+
+#contenido{					/*contenedor principal del contendido*/
+	float: left;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	width: 60%;
+	margin-bottom: 10px;
+	
+}
+#contenido p{				/*donde esta el texto que muestra los mililitros*/
+	font-size: 15px;
+	font-family: 'Nosifer', cursive, Sans-serif;
+	color: blue;
+	line-height: 20px;
+	text-align: center;
+}
+/*#contenido img{
+	width: 100%;
+	margin-top: 10px;
+	max-height: 355px;
+}
+*/
+/*todo el contenido titulo, subtitulo, svg, volumen*/
+
+.contenido_inicio{				
+	background: white;   
+	border: 3px solid green;
+	line-height: 10px;
+	margin-top: 10px;
+	padding: 0;
+	width: 100%;
+	height: 425px;
+}
+.contenido_inicio h1{
+	font-size: 40px;
+	padding: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/*background: green;*/
+}
+.contenido_inicio h3{
+	font-size: 20px;
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	background: #FFA30D;
+}
+
+.contenido_inicio p{
+	/*border: 2px solid #A2AAB4;*/
+	width: 40%;
+	float: right;
+	margin-top: 25px;
+}
+
+
+.contenido_inicio svg{			/*recuadro del svg [onda del agua]*/
+	/*border: 2px solid #A2AAB4;*/
+	padding: 0;
+	float: left;
+	width: 60%;	
+}
+
+#fillgauge5{					/*tamaño del recuadro de la ola de agua*/
+	width: 55%;
+	height:55%;
+	margin: 0 auto;
+	margin-top: 25px;
+	/*border: 3px solid red;*/
+}
+
+/* footer*/
+#coninferior{					/*contenedor principal del footer*/
+	background: #778899;
+	display: block;
+	width: 100%;
+	height: 120px;
+	clear: both;	
+}
+
+footer{
+	display: block;
+	margin: auto;
+	padding: 0px;
+	width: 70%;
+}
+
+#info{
+	float: left;
+	text-align: left;
+	width: 50%;
+	
+}
+
+#autor{
+	float: right;
+	text-align: right;
+	width: 50%;
+	
+}
+
+#info p, #autor p{
+	color: #FFF;
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+aside{
+	background: -moz-linear-gradient(top, #B9B9C8, #CACAD9);
+	background: -webkit-linear-gradient(top, #B9B9C8, #CACAD9);
+	float: right;
+	margin: 10px 0 5px 5px;
+	vertical-align: top;
+	width: 38%;
+	text-align: center;
+	border: 2px solid green;
+}
+aside h2{
+	text-decoration: underline;
+}
+aside p{
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+}
+
+.sistemas{
+	margin-bottom: 10px;
+}
+
+.btn-success {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 5px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#696969 0%,
+		#1af01a);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#696969),
+		to(#1af01a));
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border: 1px solid #48e314;
+	-moz-box-shadow:
+		0px 1px 3px rgba(173,119,173,0.5),
+		inset 0px 0px 1px rgba(20,19,20,0.7);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(173,119,173,0.5),
+		inset 0px 0px 1px rgba(20,19,20,0.7);
+	box-shadow:
+		0px 1px 3px rgba(173,119,173,0.5),
+		inset 0px 0px 1px rgba(20,19,20,0.7);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.btn-danger {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #050505;
+	padding: 5px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#d95f5f 50%,
+		#cf3636 50%,
+		#fc0000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #d95f5f),
+		color-stop(0.50, #cf3636),
+		to(#fc0000));
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+	border: 1px solid #f50a0a;
+	-moz-box-shadow:
+		0px 1px 3px rgba(66,58,66,0.5),
+		inset 0px 0px 2px rgba(31,31,29,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(66,58,66,0.5),
+		inset 0px 0px 2px rgba(31,31,29,1);
+	box-shadow:
+		0px 1px 3px rgba(66,58,66,0.5),
+		inset 0px 0px 2px rgba(31,31,29,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.4);
+}
+
+/*Media query
+Diseño para 1200px
+*/
+@media screen and (max-width: 1200px) {
+	header, footer, nav, #slider, #interior{
+		width: 90%;
+	}
+	
+	nav ul li a {
+		color:#fff;
+		padding:15px;
+		display:block;
+		text-decoration:none;
+		font-size: 15px;
+	}
+	
+	body{
+		background-size: 100%;
+		display: block;
+		padding-bottom: 10px;
+	}
+
+	#contenido p{
+		font-size: 15px;
+		font-family: 'Nosifer', cursive, Sans-serif;
+		color: blue;
+		line-height: 30px;
+		text-align: center;
+	}
+}
+
+/*Media query
+Diseño para 900px
+*/
+@media screen and (max-width: 900px) {
+	header, footer, nav, #slider, #interior{
+		width: 95%;
+	}
+	nav ul li a {
+		color:#fff;
+		padding:15px;
+		display:block;
+		text-decoration:none;
+		font-size: 15px;
+	}
+	
+	body{
+		background-size: 100%;
+		display: block;
+		padding-bottom: 10px;
+	}
+
+	#contenido p{
+		font-size: 15px;
+		font-family: 'Nosifer', cursive, Sans-serif;
+		color: blue;
+		line-height: 30px;
+		text-align: center;
+	}
+}
+
+
+
+
+
+/*Media querys
+Diseño para 800px
+*/
+
+@media screen and (max-width:800px ) {
+	
+	header, footer, #slider, #interior {
+		width: 97%;
+	}
+	body{							/*nuevo menu*/
+		padding-top: 80px; 
+	}
+
+
+
+	nav {
+		width:70%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right: 100%;
+		top: 80px;
+		margin:0;
+		overflow: scroll;
+	}
+	
+
+	#slider{
+		display: block;
+	}
+
+	nav ul li {
+		display:block;
+		border-bottom:1px solid rgba(255,255,255, .4);
+	}
+	nav ul li a{
+		display:block;
+	}
+	nav ul li:hover .children{
+		display: none;
+	}
+
+	nav ul li .children{
+		width: 100%;
+		position: relative;
+	}
+	nav ul li .children li a{
+		margin-left: 20px;
+	}
+	nav ul li .caret{
+		float: right;
+	}
+
+	.bt_menu{
+		display: block;
+		padding: 20px;
+		color: white;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;  /*nuevo menu*/
+		top: 0;				/*nuevo menu*/
+		/*height: 50px;*/
+		background:#024959;
+	}
+
+	.menu_bar span {  
+		float:right;
+		font-size:40px;
+	}
+	body{
+		background-size: 100%;
+		display: block;
+		padding-bottom: 10px;
+	}
+	#contenido, aside{
+		margin-top: 0;
+		width: 100%;
+	}
+
+	
+	article img{
+		min-width: 160px;
+	}
+	aside img{
+		display: block;
+		margin: auto;
+		max-width: 200px;
+	}
+	#info p, #autor p{
+		font-size: 8px;
+	}
+
+	#logotipo{							
+		display: block;
+		float: left;
+		line-height: 10px;
+		max-width: 50%;
+	}
+	#logotipo img{
+		max-width: 100%;
+		vertical-align: middle;
+		width: 300px;
+		height: 70px;
+	}
+
+	#rsociales{
+		display: block;
+		float: right;
+		line-height: 110px;
+		widows: 160px;
+	}
+
+	#rsociales img{
+		border-radius: 100px;
+		box-shadow: 2px 3px 5px #000;
+		margin-left: 10px;
+		vertical-align: middle;
+		height: 25px;
+		width: 25px;
+
+	}
+	#interior p{
+		font-size: 8px;
+	}	
+}
+
+@media screen and (max-width:420px ) {
+	
+	header, footer, #slider, #interior {
+		width: 97%;
+	}
+	body{							/*nuevo menu*/
+		padding-top: 80px; 
+	}
+
+	#contenido p{				
+		font-size: 5px;
+		font-family: 'Nosifer', cursive, Sans-serif;
+		color: blue;
+		line-height: 10px;
+		text-align: center;
+	}
+
+
+
+
+	nav {
+		width:70%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right: 100%;
+		top: 80px;
+		margin:0;
+		overflow: scroll;
+	}
+	
+
+	#slider{
+		display: block;
+	}
+
+	nav ul li {
+		display:block;
+		border-bottom:1px solid rgba(255,255,255, .4);
+	}
+	nav ul li a{
+		display:block;
+	}
+	nav ul li:hover .children{
+		display: none;
+	}
+
+	nav ul li .children{
+		width: 100%;
+		position: relative;
+	}
+	nav ul li .children li a{
+		margin-left: 20px;
+	}
+	nav ul li .caret{
+		float: right;
+	}
+
+	.bt_menu{
+		display: block;
+		padding: 20px;
+		color: white;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;  
+		top: 0;				
+		background:#024959;
+	}
+
+	.menu_bar span {  
+		float:right;
+		font-size:40px;
+	}
+	body{
+		background-size: 100%;
+		display: block;
+		padding-bottom: 10px;
+	}
+	#contenido, aside{
+		margin-top: 0;
+		width: 100%;
+	}
+	article img{
+		min-width: 160px;
+	}
+	aside img{
+		display: block;
+		margin: auto;
+		max-width: 200px;
+	}
+	#info p, #autor p{
+		font-size: 8px;
+	}
+
+	#logotipo{							
+		display: block;
+		float: left;
+		line-height: 10px;
+		max-width: 50%;
+	}
+	#logotipo img{
+		max-width: 100%;
+		vertical-align: middle;
+		width: 300px;
+		height: 70px;
+	}
+
+	#rsociales{
+		display: block;
+		float: right;
+		line-height: 110px;
+		widows: 160px;
+	}
+
+	#rsociales img{
+		border-radius: 100px;
+		box-shadow: 2px 3px 5px #000;
+		margin-left: 10px;
+		vertical-align: middle;
+		height: 25px;
+		width: 25px;
+
+	}
+	#interior p{
+		font-size: 8px;
+	}
+
+
+	.liquidFillGaugeText {  		
+	 	font-family: Helvetica;
+	 	font-weight: bold;
+	}
+
+	.contenido_inicio svg{			
+		
+		padding: 0;
+		float: left;
+		width: 90%;	
+
+	}
+
+	#fillgauge5{					
+		width: 45%;
+		height:45%;
+		margin-top: 10px;
+		margin-left: 5px;
+		
+	}
+	.contenido_inicio{				
+		background: white;   
+		border: 3px solid green;
+		line-height: 10px;
+		margin-top: 10px;
+		padding: 0;
+		width: 100%;
+		height: 300px;
+	}
+
+
+}

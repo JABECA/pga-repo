@@ -1,0 +1,51 @@
+#interior
+  section#contenido
+    article.contenido_inicio
+      hgroup
+        h1 Bienvenido al Sistema
+        | 					
+        h3 Agua Pluvial Almacenada
+      | 				
+      svg#fillgauge5(onclick="gauge5.update(NewValue());")
+      | 				
+      p Volumen Almacenado en Mililitros:
+      p
+        span#temp
+  | 		
+  aside
+    hgroup
+      h2 Sistemas Hidricos
+      br
+    | 			
+    .sistemas
+      label(for="") Sistema Potable: 
+      | 				
+      a#sisPotable.btn.btn-success(class="btn.lg", status="on", role="button")
+        span
+      | 			
+      br
+      br
+      | 				
+      label(for="") Sistema Pluvial: 
+      | 				
+      a#sisPluvial.btn.btn-success(class="btn.lg", status="on", role="button")
+        span
+  | 		
+  aside
+    hgroup
+      h2 Servicios Disponibles
+      br
+    | 			
+    .sistemas
+      label(for="") Ducha__: 
+      | 				
+      a#Servicio1.btn.btn-success(class="btn.lg", status="on", role="button")
+        span
+      | 			
+      br
+      br
+      | 				
+      label(for="") Inodoro: 
+      | 				
+      a#Servicio2.btn.btn-success(class="btn.lg", status="on", role="button")
+        span
